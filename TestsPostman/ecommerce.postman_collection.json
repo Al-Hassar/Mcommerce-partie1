@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ecommerce",
+		"_postman_id": "16a49de8-c5d4-fc64-a3ed-c6a9cf0c32d3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "valid_prix",
+			"request": {
+				"url": "http://localhost:9090/Produits",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 4,\n        \"nom\": \"Ordinateur portable\",\n        \"prix\": 0,\n        \"prixAchat\": 120\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "affichage_marge",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "tri_alphabetique",
+			"request": {
+				"url": "http://localhost:9090/SortProduits",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
